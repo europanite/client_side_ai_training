@@ -17,6 +17,7 @@ A Browser-Based Image AI Fine-Tuning Playground.
 ---
 
 ## 🧰 How It Works
+* **Privacy**: All computation and data stay in the tab (no network I/O of user images).
 
 ---
 
