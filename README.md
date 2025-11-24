@@ -6,7 +6,7 @@
 
 !["web_ui"](./assets/images/web_ui.png)
 
- [ 🚀 PlayGround ](https://europanite.github.io/client_side_ai_training/)
+ [PlayGround](https://europanite.github.io/client_side_ai_training/)
 
 A Browser-Based Image AI Fine-Tuning Playground. 
 
