@@ -512,6 +512,18 @@ export default function HomeScreen() {
         </Text>
       </TouchableOpacity>
 
+      <Text
+        style={{
+          fontSize: 14,
+          color: "#334155",
+          marginBottom: 16,
+        }}
+      >
+        Fine-tune a small image classifier directly in your browser. 
+        Import folders like /class_name/image.png, train a head on top of MobileNet, 
+        and test predictions without uploading your data to any server.
+      </Text>
+
       {/* Status */}
       <View
         style={{
