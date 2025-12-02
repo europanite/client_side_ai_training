@@ -89,7 +89,7 @@ export default function HomeScreen() {
   const [trainFiles, setTrainFiles] = useState<TrainFile[]>([]);
   const [labelCounts, setLabelCounts] = useState<Record<string, number>>({});
 
-  // Fine-tuned head model
+  // Head model
   const [headModel, setHeadModel] = useState<tf.LayersModel | null>(null);
 
   // Previews
@@ -512,6 +512,18 @@ export default function HomeScreen() {
         </Text>
       </TouchableOpacity>
 
+      <Text
+        style={{
+          fontSize: 14,
+          color: "#334155",
+          marginBottom: 16,
+        }}
+      >
+        Client Side AI Training is a small playground that lets you train an image
+        classifier head on top of MobileNet entirely in your browser using transfer
+        learning, with your own labeled image folders and no data upload.
+      </Text>
+
       {/* Status */}
       <View
         style={{
@@ -608,7 +620,7 @@ export default function HomeScreen() {
           backgroundColor: "#fff",
         }}
       >
-        <SectionTitle>2. Fine-tune head model</SectionTitle>
+        <SectionTitle>2. Head model</SectionTitle>
         <Text style={{ marginBottom: 8 }}>
           This trains a small dense classifier on top of MobileNet
           embeddings, entirely in your browser.
@@ -658,8 +670,7 @@ export default function HomeScreen() {
       >
         <SectionTitle>3. Test &amp; Predict</SectionTitle>
         <Text style={{ marginBottom: 8 }}>
-          Select a test image and then press "Predict" to use the
-          fine-tuned head.
+          Select a test image and then press "Predict" to use the head model.
         </Text>
         <View
           style={{
