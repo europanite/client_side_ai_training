@@ -8,7 +8,7 @@
 
  [PlayGround](https://europanite.github.io/client_side_ai_training/)
 
-A Browser-Based Image AI Fine-Tuning Playground. 
+A Browser-Based Image AI Transfer Learning Playground  built on TensorFlow.js MobileNet. 
 
 Client Side AI Training is a **browser-based playground** for experimenting with
 image classification on top of **TensorFlow.js MobileNet**.  
@@ -37,11 +37,11 @@ in the browser, and run predictions — **without sending your images to any ser
   - **3. Test & Predict** with a separate test image
 
 - **Privacy by default**  
-  - All computation and data stay inside the browser tab  
-  - No network I/O for user images (unless you manually share screenshots or logs)
+  - All computation and data stay inside the browser tab.  
+  - No network I/O for user images (unless you manually share screenshots or logs).
 
 - **Works as an Expo Web app**  
-  - Implemented as an Expo / React Native app that is exported to the web
+  - Implemented as an Expo / React Native app that is exported to the web  
     and served via GitHub Pages at `/client_side_ai_training`.
 
 ---
@@ -59,13 +59,14 @@ Under the hood, the app follows this flow:
      - `DATA_DIRECTORY/dogs/*.png`
    - The parent directory name (e.g., `cats`, `dogs`) becomes the class label.
 
-3. **Extract features & train a classifier head**  
+3. **Extract features & train a classifier head (transfer learning)**  
    - For each training image, MobileNet is used to compute an embedding vector.
    - A small `tf.sequential()` model is created with:
      - Dense layer (e.g., 128 units, ReLU)
      - Dropout
      - Final dense layer with softmax over all classes
    - The head is trained with categorical cross-entropy and Adam optimizer.
+   - This is a classic **transfer learning** setup: the base network (MobileNet) is frozen, and only the classifier head is trained on your data.
 
 4. **Run predictions on a test image**  
    - A separate test image is passed through MobileNet to get an embedding.
@@ -74,7 +75,7 @@ Under the hood, the app follows this flow:
      - Top predicted label
      - Top-k class confidences as percentages
 
-This design keeps MobileNet frozen and only trains the final classifier layer in the browser, so training is relatively fast even on small laptops.
+Because the base model is frozen and only the classifier head is trained in the browser, training is
 
 ---
 
@@ -107,15 +108,16 @@ DATA_DIRECTORY
 </pre>
 
 On the web, you select the top-level folder (e.g., DATA_DIRECTORY).
-The app will walk the tree, infer labels from folder names, and count images per label.
+The app walks the tree, infers labels from folder names, and counts images per label.
 
 ---
 
 ## Recommended environment
 
-A modern desktop browser (Chrome, Edge, or Firefox).
-WebGL enabled (for TensorFlow.js GPU acceleration).
-Local image folders accessible from your file system.
+- A Modern desktop browser (Chrome, Edge, or Firefox)
+- WebGL enabled (for TensorFlow.js GPU acceleration).
+- Local image folders accessible from your file system.
+
 Note: Some mobile browsers may not support folder upload (webkitdirectory) or may offer a degraded experience.
 
 ---
