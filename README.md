@@ -1,10 +1,10 @@
-# [Client Side AI Training](https://github.com/europanite/client_side_ai_training "Client Side AI Training")
+# [Client Side AI Training Environment](https://github.com/europanite/client_side_ai_training_environment "Client Side AI Training Environment")
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ![OS](https://img.shields.io/badge/OS-Linux%20%7C%20macOS%20%7C%20Windows-blue)
-[![CI](https://github.com/europanite/client_side_ai_training/actions/workflows/ci.yml/badge.svg)](https://github.com/europanite/client_side_ai_training/actions/workflows/ci.yml)
-[![docker](https://github.com/europanite/client_side_ai_training/actions/workflows/docker.yml/badge.svg)](https://github.com/europanite/client_side_ai_training/actions/workflows/docker.yml)
-[![GitHub Pages](https://github.com/europanite/client_side_ai_training/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/europanite/client_side_ai_training/actions/workflows/deploy-pages.yml)
+[![CI](https://github.com/europanite/client_side_ai_training_environment/actions/workflows/ci.yml/badge.svg)](https://github.com/europanite/client_side_ai_training_environment/actions/workflows/ci.yml)
+[![docker](https://github.com/europanite/client_side_ai_training_environment/actions/workflows/docker.yml/badge.svg)](https://github.com/europanite/client_side_ai_training_environment/actions/workflows/docker.yml)
+[![GitHub Pages](https://github.com/europanite/client_side_ai_training_environment/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/europanite/client_side_ai_training_environment/actions/workflows/deploy-pages.yml)
 
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -13,11 +13,11 @@
 
 !["web_ui"](./assets/images/web_ui.png)
 
- [PlayGround](https://europanite.github.io/client_side_ai_training/)
+ [PlayGround](https://europanite.github.io/client_side_ai_training_environment/)
 
 A Browser-Based Image AI Transfer Learning Playground  built on TensorFlow.js MobileNet. 
 
-Client Side AI Training is a **browser-based playground** for experimenting with
+Client Side AI Training Environment is a **browser-based playground** for experimenting with
 image classification on top of **TensorFlow.js MobileNet**.  
 You can import your own labeled image folders, train a small classifier head entirely
 in the browser, and run predictions — **without sending your images to any server**.
@@ -49,7 +49,7 @@ in the browser, and run predictions — **without sending your images to any ser
 
 - **Works as an Expo Web app**  
   - Implemented as an Expo / React Native app that is exported to the web  
-    and served via GitHub Pages at `/client_side_ai_training`.
+    and served via GitHub Pages at `/client_side_ai_training_environment`.
 
 ---
 
