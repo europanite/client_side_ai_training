@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "app",
+    "name": "Client Side AI Training Environment",
+    "description": "A Browser-Based Image AI Transfer Learning Playground  built on TensorFlow.js and MobileNet.",
     "slug": "app",
     "version": "1.0.0",
     "orientation": "portrait",
