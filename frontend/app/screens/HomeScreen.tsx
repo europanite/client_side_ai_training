@@ -508,7 +508,7 @@ export default function HomeScreen() {
             textDecorationLine: "underline",
           }}
         >
-          Client Side AI Training
+          Client Side AI Training Environment
         </Text>
       </TouchableOpacity>
       <Text
@@ -518,7 +518,7 @@ export default function HomeScreen() {
           marginBottom: 16,
         }}
       >
-        A browser-based AI training playground. You can train a model using transfer learning on your browser, with your own labeled images.
+        A browser-based Image AI training playground. You can train a model using transfer learning on your browser, with your own labeled images.
       </Text>
       {/* Status */}
       <View
